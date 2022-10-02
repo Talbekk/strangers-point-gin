@@ -1,6 +1,11 @@
-.sectionInstagram {
+.sectionContact {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin: .5rem 0 0 0;
+  }
+
+  .emailAddress:hover {
+    cursor: pointer;
   }

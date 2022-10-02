@@ -3,20 +3,27 @@ import { TextField, Typography } from '@mui/material';
 import styles from './signup.module.css';
 import { LoadingButton } from '@material-ui/lab';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import Alert from '@mui/material/Alert';
+import Snackbar from '@mui/material/Snackbar';    
 
 const SignUp = () => {
 
     const [ isSubmitting, setIsSubmitting ] = useState(false);
+    const [ isSubmitted, setIsSubmitted ] = useState(false);
 
     const handleSubmit = () => {
         setIsSubmitting(true);
 
         setTimeout(() => {
-            console.log('Hello, World!');
             setIsSubmitting(false);
+            setIsSubmitted(true);
           }, 3000);
-
     }
+
+    const handleClose = () => {
+        setIsSubmitted(false);
+    }
+
     return (
         <section>
             <Typography variant="body1" align="center" gutterBottom={true} marginBottom={2}>Register below to keep up to date with our progress.</Typography>
@@ -32,6 +39,9 @@ const SignUp = () => {
                 loadingPosition="end"
                 >Register</LoadingButton>
             </div>
+            <Snackbar open={isSubmitted} autoHideDuration={6000} onClose={handleClose}>
+                <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>Thanks for joining us on our journey!</Alert>
+            </Snackbar>
         </section>
     )
 }

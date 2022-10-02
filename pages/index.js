@@ -5,6 +5,11 @@ import { Box, Card } from '@mui/material';
 import SocialSection from '../components/socials';
 import Banner from '../components/banner';
 import SignUp from '../components/signup';
+import Contact from '../components/contact';
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
 
 export default function Home() {
   return (
@@ -22,7 +27,8 @@ export default function Home() {
           />
         <Banner/>
         <SignUp/>
-        <SocialSection/>
+          <Contact/>
+          <SocialSection/>
         </Card>
       </Box>
     </Layout>
