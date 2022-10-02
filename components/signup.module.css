@@ -1,0 +1,25 @@
+.signUp {
+            
+}
+
+.signUpForm {
+    background-color: white;
+    border-radius: 5px;
+  }
+  
+.signUpRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+  
+.signUpBtn,
+.signUpBtn:active,
+.signUpBtn:hover,
+.signUpBtn:disabled {
+    background-color: #9bb59c;
+    margin-left: .5rem;
+    padding: .5rem 1.5rem;
+    color: #fff;
+}
