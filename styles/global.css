@@ -7,26 +7,54 @@ body {
   line-height: 1.6;
   font-size: 18px;
   height: 100vh;
-    background-image: 
-        url(../public/images/background2.jpg);
-    /* background-size: cover;s */
-    background-position: center;
+  background-image: url(../public/images/background.jpg);  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
 }
 
 * {
   box-sizing: border-box;
 }
 
-a {
-  color: #0070f3;
-  text-decoration: none;
+.container {
+  max-width: 36rem;
+  padding: 0 1rem;
+  margin: auto 6rem;
 }
 
-a:hover {
-  text-decoration: underline;
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  color: #9bb59c;
+  background-color: rgba(0, 0, 0, .6);
 }
 
-img {
-  max-width: 100%;
-  display: block;
+.section-instagram {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: .5rem 0;
+}
+
+.sign-up-form {
+  background-color: white;
+  border-radius: 0;
+}
+
+.sign-up-row {
+  display: flex;
+  flex-direction: row;
+  margin: .5rem;
+  justify-self: stretch;
+}
+
+.sign-up-btn {
+  border-radius: 0;
+  background-color: #9bb59c;
 }
