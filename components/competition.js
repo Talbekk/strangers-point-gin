@@ -37,7 +37,7 @@ const Competition = ({showModal, setShowModal, emailAddress, setEmailAddress, se
   return (
     <div>
       <Modal
-        open={true}
+        open={showModal}
         onClose={handleClose}
         className={styles.modal}
       >
