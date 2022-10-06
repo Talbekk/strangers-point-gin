@@ -44,8 +44,8 @@ const Competition = ({showModal, setShowModal, emailAddress, setEmailAddress, se
         <Box className={styles.competitionContainer}>
         <Image
           src="/images/horsebox.jpg"
-          height={250}
-          width={300}
+          height={200}
+          width={250}
           alt="Strangers Point Gin HorseBox"
         />
           <Typography variant="h6" align='center' marginY={1}>

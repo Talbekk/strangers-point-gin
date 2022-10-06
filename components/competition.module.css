@@ -3,12 +3,11 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 25rem;
+    padding: 1rem;
 }
 
 .competitionContainer {
     margin: 0 auto;
-    width: 25%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,4 +36,10 @@
 
 .errorMessage{
     color: #ff0033;
+}
+
+@media (min-width:1025px) {
+    .competitionContainer {
+        width: 25%;
+    }
 }
