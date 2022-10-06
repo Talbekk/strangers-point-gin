@@ -30,4 +30,4 @@ yarn-error.log*
 .env.production.local
 
 # firebase config file
-./utils/db/serviceAccountKey.json
+/utils/db/serviceAccountKey.json
