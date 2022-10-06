@@ -4,6 +4,7 @@ import SocialSection from '../components/socials';
 import Banner from '../components/banner';
 import SignUp from '../components/signup';
 import Contact from '../components/contact';
+import Competition from './competition';
 import styles from './card.module.css';
 
 const CardContainer = () => {

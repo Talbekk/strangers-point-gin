@@ -1,0 +1,40 @@
+.modal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25rem;
+}
+
+.competitionContainer {
+    margin: 0 auto;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    color: #9bb59c;
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 7px;
+}
+
+.signUpBtn,
+.signUpBtn:active,
+.signUpBtn:hover,
+.signUpBtn:disabled {
+    background-color: #9bb59c;
+    margin-left: .5rem;
+    padding: .5rem 1.5rem;
+    color: #fff;
+}
+
+.signUpForm {
+    background-color: white;
+    border-radius: 5px;
+    margin: 1rem 0;
+  }
+
+.errorMessage{
+    color: #ff0033;
+}
