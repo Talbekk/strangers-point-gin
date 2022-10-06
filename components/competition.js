@@ -16,6 +16,7 @@ const Competition = ({showModal, setShowModal, emailAddress, setEmailAddress, se
 
     const handleClose = () => {
         setShowModal(false);
+        setIsSubmitted(true);
     }
 
   const handleSubmit = async () => {
