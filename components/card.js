@@ -4,7 +4,6 @@ import SocialSection from '../components/socials';
 import Banner from '../components/banner';
 import SignUp from '../components/signup';
 import Contact from '../components/contact';
-import Competition from './competition';
 import styles from './card.module.css';
 
 const CardContainer = () => {
@@ -12,8 +11,8 @@ const CardContainer = () => {
         <Card variant="outlined" className={styles.mainContainer}>
         <Image
           src="/images/profile.webp"
-          height={175}
-          width={325}
+          height='175rem'
+          width='350rem'
           alt="Strangers Point Gin Logo"
         />
       <Banner/> 
