@@ -11,7 +11,7 @@ const CardContainer = () => {
     return (
         <Card variant="outlined" className={styles.mainContainer}>
         <Image
-          src="/images/profile.png"
+          src="/images/profile.webp"
           height={175}
           width={325}
           alt="Strangers Point Gin Logo"

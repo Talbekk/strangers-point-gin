@@ -17,7 +17,7 @@ const Competition = ({showModal, setShowModal, emailAddress, setEmailAddress, se
     const handleClose = () => {
         setShowModal(false);
         setIsSubmitted(true);
-    }
+    }   
 
   const handleSubmit = async () => {
     setIsSubmitting(true);
@@ -44,7 +44,7 @@ const Competition = ({showModal, setShowModal, emailAddress, setEmailAddress, se
       >
         <Box className={styles.competitionContainer}>
         <Image
-          src="/images/horsebox.jpg"
+          src="/images/horsebox.webp"
           height={200}
           width={250}
           alt="Strangers Point Gin HorseBox"
