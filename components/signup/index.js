@@ -7,7 +7,9 @@ import Alert from '@mui/material/Alert';
 import Snackbar from '@mui/material/Snackbar';    
 import axios from 'axios';  
 import isEmail from 'validator/lib/isEmail';
-import Competition from './competition';
+import Competition from '../competition';
+import { event as gaEvent } from '../../lib/ga'; 
+
 
 const SignUp = () => {
 
@@ -25,10 +27,12 @@ const SignUp = () => {
                 await axios.post('/api/entry', { email_address: emailAddress });
                 setIsSubmitting(false);
                 setShowErrorMessage(false);
-                setShowModal(true);     
+                setShowModal(true);
+                gaEvent({action: "sign up successfull"});     
              } else {
                 setShowErrorMessage(true);
-                setIsSubmitting(false);            
+                setIsSubmitting(false);
+                gaEvent({action: "sign up failed - email address not acceptable"});
              }
         } else {
             setShowErrorMessage(true);

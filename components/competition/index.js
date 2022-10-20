@@ -7,6 +7,7 @@ import styles from './competition.module.css';
 import Image from 'next/image';
 import axios from 'axios';  
 import SendIcon from '@mui/icons-material/Send';
+import { event as gaEvent } from '../../lib/ga'; 
 
 const Competition = ({showModal, setShowModal, emailAddress, setEmailAddress, setIsSubmitted}) => {
 
@@ -28,7 +29,8 @@ const Competition = ({showModal, setShowModal, emailAddress, setEmailAddress, se
         setNameSuggestion(null);
         setEmailAddress('');
         setShowModal(false);
-        setIsSubmitted(true);    
+        setIsSubmitted(true);
+        gaEvent({action: "entered competition"});
     } else {
         setShowErrorMessage(true);
         setIsSubmitting(false); 

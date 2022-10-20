@@ -5,7 +5,7 @@ const Banner = () => {
     return (
         <section className={styles.banner}>
             <Typography variant="body1">
-                We are currently launching at Edinburgh Cocktail Week!
+                We are working on something really special here!
             </Typography>
         </section>
     )

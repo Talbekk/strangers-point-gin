@@ -31,3 +31,6 @@ yarn-error.log*
 
 # firebase config file
 /utils/db/serviceAccountKey.json
+
+# docs
+/strangers_point_docs

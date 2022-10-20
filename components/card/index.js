@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import { Card } from '@mui/material';
-import SocialSection from '../components/socials';
-import Banner from '../components/banner';
-import SignUp from '../components/signup';
-import Contact from '../components/contact';
+import SocialSection from '../socials';
+import Banner from '../banner';
+import SignUp from '../signup';
+import Contact from '../contact';
 import styles from './card.module.css';
 
 const CardContainer = () => {

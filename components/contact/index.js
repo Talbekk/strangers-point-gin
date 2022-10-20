@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
-import { IconButton, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import AlternateEmail from '@mui/icons-material/AlternateEmail';
+import { event as gaEvent } from '../../lib/ga'; 
 import styles from './contact.module.css';
 
 
@@ -20,6 +21,7 @@ const Contact = () => {
 
     const handleClick = (e) => {
         e.preventDefault();
+        gaEvent({action: "clicked contact"});
         window.open('mailto:info@strangerspointgin.co.uk', '_blank', 'noopener,noreferrer');
     }
 

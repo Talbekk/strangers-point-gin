@@ -1,5 +1,6 @@
 import Layout from '../components/layout';
 import Head from 'next/head';
+import CookieBar from '../components/cookieBar';
 import { Box } from '@mui/material';
 import CardContainer from '../components/card';
 import { CacheProvider } from '@emotion/react';
@@ -20,6 +21,7 @@ export default function Home() {
         <Box sx={{ minWidth: 275 }}>
         <CardContainer/>
         </Box>
+        <CookieBar/>
       </Layout>
     </CacheProvider>
   );
