@@ -15,7 +15,7 @@ const CardContainer = () => {
           width='350rem'
           alt="Strangers Point Gin Logo"
         />
-      <Banner/> 
+      <Banner/>
       <SignUp/>
         <Contact/>
         <SocialSection/>
