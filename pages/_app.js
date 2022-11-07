@@ -4,6 +4,7 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import Script from 'next/script';
+import { Analytics } from '@vercel/analytics/react';
 
 export default function App({ Component, pageProps }) {
     return (
@@ -20,5 +21,6 @@ export default function App({ Component, pageProps }) {
             `}
         </Script>
         <Component {...pageProps} />
+        <Analytics />
       </>);
   }
