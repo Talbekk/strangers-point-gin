@@ -10,7 +10,7 @@ const CardContainer = () => {
     return (
         <Card variant="outlined" className={styles.mainContainer}>
         <Image
-          src="/images/profile.webp"
+          src="https://firebasestorage.googleapis.com/v0/b/strangers-point-gin.appspot.com/o/profile.webp?alt=media&token=dd3d8d6d-af01-4d7d-84f0-09e193b0898d"
           height='175rem'
           width='350rem'
           alt="Strangers Point Gin Logo"

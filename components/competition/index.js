@@ -46,7 +46,7 @@ const Competition = ({showModal, setShowModal, emailAddress, setEmailAddress, se
       >
         <Box className={styles.competitionContainer}>
         <Image
-          src="/images/horsebox.webp"
+          src="https://firebasestorage.googleapis.com/v0/b/strangers-point-gin.appspot.com/o/horsebox.webp?alt=media&token=f0b73975-519b-4b2d-8d98-4408977bb198"
           height={200}
           width={250}
           alt="Strangers Point Gin HorseBox"
